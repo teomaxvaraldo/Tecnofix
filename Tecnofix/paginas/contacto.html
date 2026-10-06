@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | TecnoFix</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header__contenido">
+
+            <h1 class="header__titulo">
+                TecnoFix
+            </h1>
+
+            <p class="header__texto">
+                Servicio técnico de computadoras y notebooks
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <nav class="nav">
+
+        <ul class="nav__lista">
+
+            <li class="nav__item">
+                <a class="nav__enlace" href="../index.html">
+                    Inicio
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a class="nav__enlace" href="../index.html#productos">
+                    Servicios
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a class="nav__enlace" href="../index.html#resenas">
+                    Reseñas
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a class="nav__enlace" href="contacto.html">
+                    Contacto
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="formulario">
+
+            <h2>
+                Contactanos
+            </h2>
+
+            <p>
+                Completá el formulario y contanos qué problema
+                tiene tu computadora o notebook.
+            </p>
+
+
+            <!-- FORMULARIO -->
+            <!-- Más adelante reemplazamos # por Formspree -->
+
+            <form action="#" method="POST">
+
+
+                <!-- NOMBRE -->
+
+                <div class="formulario__campo">
+
+                    <label
+                        class="formulario__label"
+                        for="nombre"
+                    >
+                        Nombre
+                    </label>
+
+                    <input
+                        class="formulario__input"
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresá tu nombre"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="formulario__campo">
+
+                    <label
+                        class="formulario__label"
+                        for="email"
+                    >
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        class="formulario__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="tucorreo@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <div class="formulario__campo">
+
+                    <label
+                        class="formulario__label"
+                        for="mensaje"
+                    >
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        class="formulario__textarea"
+                        id="mensaje"
+                        name="mensaje"
+                        placeholder="Contanos qué problema tiene tu equipo"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+
+                <button
+                    class="formulario__boton"
+                    type="submit"
+                >
+                    Enviar mensaje
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+
+        <section class="contacto">
+
+            <h2 class="contacto__titulo">
+                Información de contacto
+            </h2>
+
+            <p class="contacto__texto">
+                Teléfono: 11 1234-5678
+            </p>
+
+            <p class="contacto__texto">
+                Email: tecnofix@gmail.com
+            </p>
+
+            <p class="contacto__texto">
+                Horario de atención: lunes a viernes de 9:00 a 18:00
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p class="footer__texto">
+            TecnoFix - Servicio Técnico de Computadoras
+        </p>
+
+        <p class="footer__texto">
+            Reparación y mantenimiento de PC y notebooks
+        </p>
+
+        <p class="footer__texto">
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

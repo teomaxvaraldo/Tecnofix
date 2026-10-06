@@ -1,0 +1,521 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header__titulo {
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.header__texto {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+
+/* ==============================
+   NAVEGACIÓN
+============================== */
+
+.nav {
+    background-color: #1f2937;
+    padding: 15px 20px;
+}
+
+.nav__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav__enlace {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav__enlace:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   INICIO
+============================== */
+
+.inicio {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.inicio__contenido {
+    flex: 1;
+}
+
+.inicio__titulo {
+    color: #111827;
+    font-size: 35px;
+}
+
+.inicio__texto {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.inicio__boton {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 13px 25px;
+
+    background-color: #111827;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.inicio__boton:hover {
+    background-color: #374151;
+}
+
+.inicio__imagen {
+    flex: 1;
+}
+
+.inicio__imagen img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ==============================
+   SERVICIOS
+============================== */
+
+.productos {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: white;
+}
+
+.productos__titulo {
+    font-size: 32px;
+    color: #111827;
+}
+
+.productos__descripcion {
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   FLEXBOX - PRODUCTOS
+============================== */
+
+.productos__contenedor {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.producto {
+    flex: 1;
+
+    min-width: 220px;
+
+    padding: 25px;
+
+    background-color: #eef2f7;
+
+    border: 1px solid #d5dbe3;
+}
+
+.producto__titulo {
+    color: #111827;
+    font-size: 21px;
+}
+
+.producto__texto {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   TABLA DE PRECIOS
+============================== */
+
+.precios {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: white;
+}
+
+.precios__titulo {
+    font-size: 32px;
+    color: #111827;
+}
+
+.precios__tabla {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 25px;
+}
+
+.precios__tabla th {
+    background-color: #111827;
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+.precios__tabla td {
+    padding: 15px;
+
+    border: 1px solid #d1d5db;
+}
+
+.precios__tabla tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+
+/* ==============================
+   RESEÑAS
+============================== */
+
+.resenas {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: white;
+}
+
+.resenas__titulo {
+    font-size: 32px;
+    color: #111827;
+}
+
+.resenas__descripcion {
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   GRID - RESEÑAS
+============================== */
+
+.resenas__contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.resena {
+    padding: 25px;
+
+    background-color: #eef2f7;
+
+    border: 1px solid #d5dbe3;
+}
+
+.resena__nombre {
+    color: #111827;
+    font-size: 20px;
+}
+
+.resena__texto {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   CONTACTO
+============================== */
+
+.contacto {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 50px;
+
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+}
+
+.contacto__titulo {
+    font-size: 32px;
+}
+
+.contacto__texto {
+    line-height: 1.6;
+}
+
+.contacto__boton {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 30px;
+
+    background-color: white;
+    color: #111827;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.contacto__boton:hover {
+    background-color: #e5e7eb;
+}
+
+
+/* ==============================
+   FORMULARIO
+============================== */
+
+.formulario {
+    max-width: 700px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    background-color: white;
+}
+
+.formulario__campo {
+    margin-bottom: 20px;
+}
+
+.formulario__label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+.formulario__input,
+.formulario__textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+}
+
+.formulario__textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+.formulario__boton {
+    padding: 13px 25px;
+
+    background-color: #111827;
+
+    color: white;
+
+    border: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.formulario__boton:hover {
+    background-color: #374151;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer__texto {
+    margin: 5px;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+
+    /* HEADER */
+
+    .header {
+        padding: 35px 20px;
+    }
+
+    .header__titulo {
+        font-size: 35px;
+    }
+
+    .header__texto {
+        font-size: 16px;
+    }
+
+
+    /* NAVEGACIÓN */
+
+    .nav__lista {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* INICIO */
+
+    .inicio {
+        flex-direction: column;
+
+        margin: 20px 10px;
+
+        padding: 25px;
+
+        gap: 25px;
+    }
+
+    .inicio__titulo {
+        font-size: 28px;
+    }
+
+
+    /* SECCIONES */
+
+    .productos,
+    .precios,
+    .resenas,
+    .contacto {
+        margin: 20px 10px;
+
+        padding: 25px;
+    }
+
+
+    /* PRODUCTOS */
+
+    .productos__contenedor {
+        flex-direction: column;
+    }
+
+
+    /* RESEÑAS */
+
+    .resenas__contenedor {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* TABLA */
+
+    .precios__tabla-contenedor {
+        overflow-x: auto;
+    }
+
+    .precios__tabla {
+        min-width: 600px;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto__titulo {
+        font-size: 26px;
+    }
+
+}
